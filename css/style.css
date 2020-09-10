@@ -1,0 +1,269 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* CSS Variables */
+/* :root{
+    --navbar-height: 59px;
+} */
+
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden; 
+}
+
+
+/* Navigation Bar */
+#navbar{
+    margin: -33px;
+    padding: -5px;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    position: sticky;
+    /* justify-content: center; */
+}
+
+
+/* Navigation bar: Logo and styling */
+#logo{
+    margin: 24px 35px;
+}
+#logo img{
+    margin: -7px -1px;
+    height: 96px;
+    filter: invert(154%) sepia(73%) saturate(3212%) hue-rotate(229deg) brightness(100000033%) contrast(704%);
+}
+#logo img:hover{
+    background-color: white;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+     height: 100%; 
+    width:100%; 
+    z-index: -1;
+    opacity: 0.2;
+    top: 0px;
+    left: 0px;
+}   
+
+
+/* Navigagtion bar: List styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Grenze Gotisch', cursive;
+}
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    cursor: -moz-grabbing;
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 5px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 150px;
+    align-items: center;
+    justify-content: center;
+    height: 605px; 
+    /* position: relative;    */
+}
+#home::before{
+    content: "";
+    background: url('../image/bgimage.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position:center;
+    position: absolute;
+    height: 74%; 
+    width:100%; 
+    z-index: -1;
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    text-align:center;
+    font-family: 'Fondamento', cursive;
+}
+#home p{
+    text-align:center;
+    font-size: 1.8rem;
+    font-family: 'Fondamento', cursive;
+    margin: 15px;
+    padding: 5px;
+}
+
+
+/* Services section */
+#services{
+    position:relative;
+    margin: 38px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid white;
+    padding: 40px;
+    margin: -75px 12px;
+    border-radius: 24px;
+    background-color: white;
+    color: black;
+    margin-bottom: 2px;
+}
+#services .box img{
+    height: 165px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+
+/* Clients Section */
+#client-section{
+    /* height: 415px;   */
+    position: relative;  
+}
+#client-section h1{
+    text-align: center;
+    margin: 27px;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 3.8rem;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url('../image/bgimage2.jpg') no-repeat center center/cover; 
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 180px;
+}
+.clients-item{
+    padding: 34px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+    background: url('../image/contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 34px;
+  
+} 
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.6rem;
+    margin: 0.2rem;
+    border-radius: 12px;
+}
+#contact-box #rrr{
+    display: flex;  
+    margin: 10px -1px;
+    padding: 30px ;
+    width: 120%;
+    
+}
+#contact-box form{
+    width: 40%;   
+}
+#contact-box label{
+font-size: 1.5rem;
+font-family: 'Grenze Gotisch', cursive;
+}
+#contact-box  label{
+    margin: -14px 3px;
+}
+
+
+/* Footer Section */
+footer{
+    padding: 30px 20px;
+}
+
+
+/* Utility classes */
+.Hprimary{
+    font-size: 3.8rem;
+    padding: 11px;
+    padding: 67px;
+    margin: 0px;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.Hsecondary{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 2.2rem;
+    padding: 11px;
+    margin: -10px;
+}
+.btn{
+    padding:6px 19px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.textcenter{
+    text-align: center;
+}
+
+
